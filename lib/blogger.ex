@@ -28,6 +28,6 @@ defmodule Blogger do
     string
     |> String.upcase()
     |> String.split(string, [" ", "(", ")"])
-    |> IO.puts 
+    |> IO.puts "cow,goat,sheep"
   end
 end
