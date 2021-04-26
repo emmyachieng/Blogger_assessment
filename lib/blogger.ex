@@ -16,10 +16,14 @@ defmodule Blogger do
     :world
   end
 
+
+#fetching blog post from the URL
+
   def fetch_blog do
     HTTPoison.get("https://medium.com/podiihq/quick-connect-to-your-amazon-ec2-linux-instance-through-the-command-line-6c682960ef91")
   end
 
+#Converting lowercase string inputs to uppercase outputs
   def upcase(string) when is_binary(string) do
     string
     |> String.upcase()
